@@ -17,6 +17,8 @@
         href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -64,37 +66,41 @@
     <!-- Hero -->
     <section class="hero d-flex align-items-center">
         <div class="container position-relative py-5 text-white">
-            <div class="w-75 z-3 my-5">
-                <h2 class="text-crimson">
-                    M2 NETWORK
-                </h2>
-                <h1 class="hero-title">
-                    MULAI LANGKAH BARU BERSAMA KAMI!
-                </h1>
-                <p class=" fw-medium hero-sub">
-                    Ayo, buat perbedaan dan jadilah sumber inspirasi untuk orang-orang di sekitarmu! Bergabunglah
-                    dengan
-                    kami hari ini.
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div class="w-75 z-3 my-5">
+                    <h2 class="text-crimson">
+                        M2 NETWORK
+                    </h2>
+                    <h1 class="hero-title">
+                        MULAI LANGKAH BARU BERSAMA KAMI!
+                    </h1>
+                    <p class=" fw-medium hero-sub">
+                        Ayo, buat perbedaan dan jadilah sumber inspirasi untuk orang-orang di sekitarmu! Bergabunglah
+                        dengan
+                        kami hari ini.
+                    </p>
+                </div>
+
+                <a href=""
+                    class="d-inline-block hero-btn px-5 py-4 bg-gradient text-decoration-none text-black fw-bold rounded-3 mb-3">
+                    BERGABUNG MENJADI M2 MEMBER
+                </a>
+                <p class="">
+                    Anda member M2Network?
+                    <a href="" class="text-gradient">
+                        Masuk disini
+                    </a>
                 </p>
             </div>
 
-            <a href=""
-                class="d-inline-block hero-btn px-5 py-4 bg-gradient text-decoration-none text-black fw-bold rounded-3 mb-3">
-                BERGABUNG MENJADI M2 MEMBER
-            </a>
-            <p class="">
-                Anda member M2Network?
-                <a href="" class="text-gradient">
-                    Masuk disini
-                </a>
-            </p>
-            <img src="assets/image/hero-img.png" alt="" class="position-absolute hero-img z-n1 img-fluid">
+            <img src="assets/image/hero-img.png" alt="" class="position-absolute hero-img z-n1 img-fluid"
+                data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400">
         </div>
     </section>
     <!-- Hero End -->
 
     <!-- temtang Kami -->
-    <section class="tentang-kami py-5 mt-5">
+    <section class="tentang-kami py-5 mt-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="container py-5">
             <div class="text-center mb-4">
                 <h3 class="text-crimson section-sub">
@@ -132,7 +138,7 @@
     <section class="bergabung">
         <div class="container py-5">
             <div class="row row-cols-2">
-                <div class="col">
+                <div class="col" data-aos="fade-right" data-aos-duration="1000">
                     <h3 class="text-crimson section-sub">
                         BERGABUNGLAH DENGAN M2 NETWORK
                     </h3>
@@ -178,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col p-2">
+                <div class="col p-2" data-aos="fade-left" data-aos-duration="1000">
                     <div class="bg-card rounded-3 p-4 px-5 text-white">
                         <h1 class="crimson text-center card-title">
                             CONGRATULATIONS
@@ -220,7 +226,7 @@
     <!-- bergabung End-->
 
     <!-- jangan-ragu -->
-    <section class="jangan-ragu my-5">
+    <section class="jangan-ragu my-5" data-aos="zoom-in" data-aos-duration="1000">
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h3 class="text-crimson section-sub">
@@ -428,7 +434,7 @@
     <!-- dokumentasi End -->
 
     <!-- testimoni -->
-    <section class="testimoni">
+    <section class="testimoni" data-aos="fade-up" data-aos-duration="1000">
         <div class="container-fluid py-5 mb-5">
             <div class="text-center mb-5">
                 <h3 class="text-crimson section-sub">
