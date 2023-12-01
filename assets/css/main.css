@@ -69,7 +69,7 @@ section {
 
 /* Hero */
 .hero {
-    min-height: 100vh !important;
+    min-height: 103vh;
 }
 
 .hero .hero-title {
@@ -99,6 +99,18 @@ section {
 .hero .hero-img {
     right: 0px !important;
     top: -13vh !important;
+}
+
+@media screen and (min-width: 1441px) {
+    .hero {
+        min-height: 830px !important;
+        margin-top: 50px !important;
+    }
+
+    .hero .hero-img {
+        right: 0px !important;
+        top: -5vh !important;
+    }
 }
 
 /* Hero end*/
@@ -161,25 +173,42 @@ section {
 
 
 /* produk */
-@keyframes rotate { 
-    0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .produk .img-circle-container {
     transform: translateX(-50%) !important;
-    width: 80vw !important;
+    width: 75vw !important;
 }
 
 .produk .produk-circle-img {
     animation: rotate 20s linear infinite;
-    width: 80vw !important;
+    width: 75vw !important;
 }
 
-/* .produk .produk-content-container {
-    transform: translateX(-65%) !important;
-    width: 80vw !important;
-} */
+@media screen and (min-width: 1441px) {
+    .produk {
+        max-width: 1440px !important;
+    }
+
+    .produk .img-circle-container {
+        transform: translateX(-50%) !important;
+        width: 800px !important;
+    }
+
+    .produk .produk-circle-img {
+        animation: rotate 20s linear infinite;
+        width: 800px !important;
+    }
+}
+
 /* produk End */
 
 /* dokumentasi */
@@ -274,24 +303,34 @@ section {
     text-align: left !important;
 }
 
+@media screen and (min-width: 1441px) {
+    .testimoni {
+        max-width: 1440px !important;
+    }
+
+}
+
 /* Testimoni End */
 
 /* Hubungi */
 .hubungi .form-item-container {
     transform: translateY(-20px) !important;
 }
+
 .hubungi .form-label {
     background-color: black;
-    transform: translate(10px,12px) !important;
+    transform: translate(10px, 12px) !important;
     margin: 0 !important;
     font-size: 13px !important;
 }
+
 .hubungi .input-container {
     background-image: url('../image/navbar.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover;
     padding: 2px;
 }
+
 .hubungi .form-control {
     background-color: #080808 !important;
     padding: 10px !important;
@@ -299,14 +338,17 @@ section {
     color: white !important;
     border: none !important;
 }
+
 .hubungi .form-control::placeholder {
     color: #636363 !important;
 }
+
 .hubungi .btn-kirim {
     background-image: url('../image/navbar.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover;
 }
+
 /* Hubungi End*/
 
 /* footer */
@@ -316,7 +358,9 @@ footer {
     background-size: cover !important;
     padding-top: 2px !important;
 }
+
 footer .container-fluid {
     background-color: #080808 !important;
 }
+
 /* footer End */
