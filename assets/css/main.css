@@ -6,6 +6,12 @@ body {
     background-color: black;
 }
 
+@media screen and (max-width: 900px) {
+    body {
+    background-size: contain;
+    }
+}
+
 .bg-gradient {
     background: rgb(175, 135, 40) !important;
     background: linear-gradient(90deg, rgba(175, 135, 40, 1) 0%, rgba(183, 143, 40, 1) 20%, rgba(255, 215, 125, 1) 50%, rgba(176, 134, 43, 1) 80%, rgba(175, 135, 40, 1) 100%) !important;
@@ -52,6 +58,14 @@ section {
     font-weight: 700;
 }
 
+@media screen and (max-width: 900px) {
+    
+    .section-title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
 /* Navbar */
 #navbar {
     height: 7rem !important;
@@ -63,6 +77,13 @@ section {
 
 #navbar .nav-link {
     font-weight: bold !important;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-logo {
+        margin: 0px !important;
+        padding: 0px 20px !important;
+    }
 }
 
 /* Navbar End */
@@ -113,6 +134,29 @@ section {
     }
 }
 
+@media screen and (max-width: 900px) {
+    .hero {
+        min-height: 75vh !important;
+    }
+
+    .hero .hero-img {
+        right: -120px !important;
+        top: -12vh !important;
+    }
+
+    .hero .hero-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 110%; /* 2.75rem */
+        letter-spacing: 0.05rem;
+        width: 88%;
+    }
+
+    .hero .hero-content {
+        transform: translateY(100px) !important;
+    }
+}
+
 /* Hero end*/
 
 /* Tentang-kami */
@@ -123,6 +167,22 @@ section {
     /* 1.5rem */
     letter-spacing: 0.01rem;
     max-width: 35rem;
+}
+
+@media screen and (max-width: 900px) {
+    .title-container {
+        text-align: left !important;
+    }
+
+    .tentang-kami .tentang-text {
+        font-size: 0.875rem;
+        letter-spacing: 0.00875rem;
+    }
+
+    .tentang-kami .tentang-img {
+        padding-top: 3rem;
+        width: 280px !important;
+    }
 }
 
 /* Tentang-kami End */
@@ -148,6 +208,13 @@ section {
     background-color: #901565 !important;
 }
 
+@media screen and (max-width: 900px) {
+    .bergabung .card-title {
+        font-size: 4rem;
+        margin-bottom: 2rem !important;
+
+    }
+}
 /* bergabung End*/
 
 /* jangan-ragu */
@@ -169,6 +236,12 @@ section {
     -webkit-box-orient: vertical !important;
 }
 
+@media screen and (max-width: 900px) {
+    .jangan-ragu .section-title {
+        width: 100%;
+    }
+}
+
 /* jangan-ragu End */
 
 
@@ -184,7 +257,7 @@ section {
 }
 
 .produk .img-circle-container {
-    transform: translateX(-50%) !important;
+    transform: translateX(-58%) !important;
     width: 75vw !important;
 }
 
@@ -199,13 +272,23 @@ section {
     }
 
     .produk .img-circle-container {
-        transform: translateX(-50%) !important;
+        transform: translateX(-60%) !important;
         width: 800px !important;
     }
 
     .produk .produk-circle-img {
         animation: rotate 20s linear infinite;
         width: 800px !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .produk .img-circle-container {
+        display: none !important;
+    }
+
+    .produk .swiper-produk-tab {
+        display: block !important;
     }
 }
 
@@ -249,6 +332,25 @@ section {
     border: 2px solid #B98E2A;
     font-weight: 700;
     color: #B98E2A !important;
+}
+
+@media screen and (max-width: 900px) {
+    .dokumentasi .section-title {
+        width: 100%;
+    }
+    
+    .dokumentasi .dokumentasi-desc {
+        width: 100%;
+    }
+
+    .dokumentasi .dok-img {
+        object-fit: cover !important;
+    }
+
+    .dokumentasi .dok-card {
+        height: 350px !important;
+        overflow: hidden !important;
+    }
 }
 
 /* dokumentasi End */
@@ -307,7 +409,12 @@ section {
     .testimoni {
         max-width: 1440px !important;
     }
+}
 
+@media screen and (max-width: 900px) {
+    .testimoni .section-title {
+        width: 70%;
+    }
 }
 
 /* Testimoni End */

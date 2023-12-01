@@ -44,7 +44,7 @@
                 </ul>
             </div>
             <a class="" href="#" class="">
-                <img src="assets/image/alfa-logo-black.svg" alt="" class="mx-5 px-5">
+                <img src="assets/image/alfa-logo-black.svg" alt="" class="mx-5 px-5 nav-logo">
             </a>
             <div class="collapse navbar-collapse w-50" id="navbarNav" style="flex-grow: 0 !important;">
                 <ul class="navbar-nav d-flex justify-content-between w-100">
@@ -66,7 +66,7 @@
     <!-- Hero -->
     <section class="hero d-flex align-items-center">
         <div class="container position-relative py-5 text-white">
-            <div data-aos="fade-right" data-aos-duration="1000">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
                 <div class="w-75 z-3 my-5">
                     <h2 class="text-crimson">
                         M2 NETWORK
@@ -102,7 +102,7 @@
     <!-- temtang Kami -->
     <section class="tentang-kami py-5 mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" id="about">
         <div class="container py-5">
-            <div class="text-center mb-4">
+            <div class="text-center mb-4 title-container">
                 <h3 class="text-crimson section-sub">
                     TENTANG KAMI
                 </h3>
@@ -112,7 +112,7 @@
             </div>
             <div class="row">
                 <div class="col col-5 text-end">
-                    <img src="assets/image/alfa-logo.svg" alt="" class="me-4" style="width: 20rem;">
+                    <img src="assets/image/alfa-logo.svg" alt="" class="me-4 tentang-img" style="width: 20rem;">
                 </div>
                 <div class="col col-7">
                     <p class="text-white py-5 tentang-text">
@@ -137,7 +137,7 @@
     <!-- bergabung -->
     <section class="bergabung">
         <div class="container py-5">
-            <div class="row row-cols-2">
+            <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                     <h3 class="text-crimson section-sub">
                         BERGABUNGLAH DENGAN M2 NETWORK
@@ -205,7 +205,7 @@
                             </div>
                             <img src="assets/image/card-img.png" alt="" class="">
                         </div>
-                        <div class="d-flex justify-content-between mt-5 pt-3">
+                        <div class="d-flex justify-content-between mt-3 mt-lg-5 pt-3">
                             <div class="">
                                 <h3 class="fw-bold crimson fst-normal mb-0">
                                     MRS.LILIK
@@ -228,7 +228,7 @@
     <!-- jangan-ragu -->
     <section class="jangan-ragu my-5">
         <div class="container py-5">
-            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <div class="text-center mb-5 title-container" data-aos="fade-up" data-aos-duration="1000">
                 <h3 class="text-crimson section-sub">
                     PT. MAHESA MANUNGGAL NETWORK
                 </h3>
@@ -236,7 +236,7 @@
                     JANGAN RAGU UNTUK BERGABUNG MENJADI MITRA BISNIS M2 NETWORK
                 </h2>
             </div>
-            <div class="row row-cols-3">
+            <div class="row row-cols-1 row-cols-lg-3 gap-lg-0 gap-4">
                 <div class="col" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="400">
                     <div class="card-container p-4 rounded-3 text-white">
                         <img src="assets/image/Diploma.svg" alt="" class="mb-4">
@@ -280,13 +280,15 @@
 
     <!-- produk -->
     <section class="produk mx-auto" id="product">
-        <div class="container produk-container py-5 row d-flex">
-            <div class="col col-6 z-0">
+        <div class="container produk-container py-5 row d-flex mx-auto">
+            <div class="col col-12 col-lg-6 z-0">
+                <!-- image desktop -->
                 <div class="img-circle-container">
                     <img src="assets/image/produk-circle.png" alt="" class="produk-circle-img">
                 </div>
+                <!-- image desktop End -->
             </div>
-            <div class="col-6 align-self-center z-1">
+            <div class="col col-12 col-lg-6 align-self-center z-1">
                 <div class="produk-content-container">
                     <h3 class="text-crimson section-sub">
                         PRODUK KAMI
@@ -328,14 +330,36 @@
                 </div>
             </div>
         </div>
+        <!-- image slider tablet and mobile -->
+        <div class="swiper-produk-tab mb-5 pb-5 d-none">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/image/produk/produk1.png" alt="" class="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/image/produk/produk2.png" alt="" class="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/image/produk/produk3.png" alt="" class="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/image/produk/produk4.png" alt="" class="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/image/produk/produk5.png" alt="" class="">
+                </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> --> -->
+        </div>
+        <!-- image slider tablet and mobile End-->
     </section>
     <!-- produk End -->
 
     <!-- dokumentasi -->
     <section class="dokumentasi" id="gallery">
         <div class="container py-5">
-            <div class="row mb-5">
-                <div class="col col-7 d-flex">
+            <div class="row row-cols-1 row-cols-lg-3 mb-5 gy-5">
+                <div class="col col-12 col-lg-7 d-flex">
                     <div class="align-self-center">
                         <h3 class="text-crimson section-sub">
                             DOKUMENTASI KEGIATAN
@@ -349,9 +373,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="col col-5">
-                    <div class="position-relative">
-                        <img src="assets/image/dok.png" alt="" class="w-100">
+                <div class="col col-12 col-lg-5">
+                    <div class="position-relative dok-card">
+                        <img src="assets/image/dok.png" alt="" class="w-100 dok-img">
                         <div class="dok-bg-card position-absolute"></div>
                         <div class="position-absolute dok-card-content text-white p-3">
                             <h4 class="crimson fst-normal">
@@ -370,11 +394,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row row-cols-3 mb-5">
                 <div class="col">
-                    <div class="position-relative">
-                        <img src="assets/image/dok1.png" alt="" class="w-100">
+                    <div class="position-relative dok-card">
+                        <img src="assets/image/dok1.png" alt="" class="w-100 dok-img">
                         <div class="dok-bg-card position-absolute"></div>
                         <div class="position-absolute dok-card-content text-white p-3">
                             <h4 class="crimson fst-normal">
@@ -393,8 +415,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="position-relative">
-                        <img src="assets/image/dok2.png" alt="" class="w-100">
+                    <div class="position-relative dok-card">
+                        <img src="assets/image/dok2.png" alt="" class="w-100 dok-img">
                         <div class="dok-bg-card position-absolute"></div>
                         <div class="position-absolute dok-card-content text-white p-3">
                             <h4 class="crimson fst-normal">
@@ -413,8 +435,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="position-relative">
-                        <img src="assets/image/dok3.png" alt="" class="w-100">
+                    <div class="position-relative dok-card">
+                        <img src="assets/image/dok3.png" alt="" class="w-100 dok-img">
                         <div class="dok-bg-card position-absolute"></div>
                         <div class="position-absolute dok-card-content text-white p-3">
                             <h4 class="crimson fst-normal">
@@ -592,7 +614,7 @@
     <!-- hubungi -->
     <section class="hubungi" id="contact">
         <div class="container py-5 mb-5">
-            <div class="row row-cols-2 gx-5">
+            <div class="row row-cols-1 row-cols-lg-2 gx-5">
                 <div class="col align-self-center">
                     <h3 class="text-crimson section-sub">
                         HUBUNGI KAMI
@@ -700,6 +722,25 @@
         });
     </script>
     <script>
+        var mySwiper = new Swiper('.swiper-produk-tab', {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            initialSlide: 1,
+            watchOverflow: true,
+            centeredSlides: true,
+            loop: true,
+
+            autoplay: {
+                delay: 2000,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        })
+    </script>
+    <script>
         const swiper = new Swiper('.swiper', {
 
             loop: true,
@@ -731,6 +772,19 @@
                     // will set `translateX(100%)` on next slides
                     scale: 0.9,
                     translate: ["98%", 0, 0],
+                },
+            },
+
+            breakpoints: {
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                    resistanceRatio: 0.85
+                },
+                900: {
+                    slidesPerView: 2,
+                    spaceBetween: 28,
+                    resistanceRatio: 0.85
                 },
             },
         });
