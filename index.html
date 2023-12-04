@@ -26,11 +26,14 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-md bg-body-tertiary" id="navbar">
         <div class="container d-flex justify-content-between align-items-center">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <img src="assets/image/hamburger.png" alt="" width="60px">
             </button>
-            <div class="collapse navbar-collapse w-50" id="navbarNav" style="flex-grow: 0 !important;">
+            <div class="nav-logo-mobile1 position-absolute d-none">
+                <img src="assets/image/alfa-logo-black.svg" alt="" class="" width="150px">
+            </div>
+            <div class="w-50 nav-desktop" style="flex-grow: 0 !important;">
                 <ul class="navbar-nav d-flex justify-content-between w-100">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
@@ -46,7 +49,7 @@
             <a class="" href="#" class="">
                 <img src="assets/image/alfa-logo-black.svg" alt="" class="mx-5 px-5 nav-logo">
             </a>
-            <div class="collapse navbar-collapse w-50" id="navbarNav" style="flex-grow: 0 !important;">
+            <div class="w-50 nav-desktop" style="flex-grow: 0 !important;">
                 <ul class="navbar-nav d-flex justify-content-between w-100">
                     <li class="nav-item">
                         <a class="nav-link" href="#gallery">Gallery</a>
@@ -63,11 +66,58 @@
     </nav>
     <!-- navbar end -->
 
+    <!-- navbar mobile expand -->
+    <div class="nav-mobile collapse navbar-collapse position-fixed" id="navbarNav">
+        <div class="position-relative d-flex justify-content-center py-4 align-items-center mb-3">
+            <img src="assets/image/alfa-logo.svg" alt="" width="100" height="">
+
+            <button class="position-absolute close-btn navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="assets/image/close.png" alt="" width="60px">
+            </button>
+
+        </div>
+        <div class="navbar-nav d-flex flex-column gap-4">
+            <a href="" class="nav-item nav-item-mobile p-3 text-center fw-bold fs-5 text-decoration-none">
+                <p class="text-gradient m-0 nav-link">
+                    Home
+                </p>
+            </a>
+            <a href="#about" class="nav-item nav-item-mobile p-3 text-center fw-bold fs-5 text-decoration-none">
+                <p class="text-gradient m-0 nav-link">
+                    About
+                </p>
+            </a>
+            <a href="#product" class="nav-item nav-item-mobile p-3 text-center fw-bold fs-5 text-decoration-none">
+                <p class="text-gradient m-0 nav-link">
+                    Product
+                </p>
+            </a>
+            <a href="#gallery" class="nav-item nav-item-mobile p-3 text-center fw-bold fs-5 text-decoration-none">
+                <p class="text-gradient m-0 nav-link">
+                    Gallery
+                </p>
+            </a>
+            <a href="#" class="nav-item nav-item-mobile p-3 text-center fw-bold fs-5 text-decoration-none">
+                <p class="text-gradient m-0 nav-link">
+                    Event
+                </p>
+            </a>
+            <a href="#contact" class="nav-item-mobile p-3 text-center fw-bold fs-5 text-decoration-none">
+                <p class="text-gradient m-0">
+                    Contact
+                </p>
+            </a>
+        </div>
+    </div>
+    <!-- navbar mobile expand End -->
+
     <!-- Hero -->
     <section class="hero d-flex align-items-center">
         <div class="container position-relative py-5 text-white">
             <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                <div class="w-75 z-3 my-5">
+                <div class="hero-text-up w-75 z-3 my-5">
                     <h2 class="text-crimson">
                         M2 NETWORK
                     </h2>
@@ -92,9 +142,13 @@
                     </a>
                 </p>
             </div>
+            <div class="position-absolute hero-img z-n1">
+                <div class="bg-img-hero position-absolute d-none">
 
-            <img src="assets/image/hero-img.png" alt="" class="position-absolute hero-img z-n1 img-fluid"
-                data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                </div>
+                <img src="assets/image/hero-img.png" alt="" class="img-fluid" data-aos="zoom-in"
+                    data-aos-duration="1000" data-aos-delay="400">
+            </div>
         </div>
     </section>
     <!-- Hero End -->
@@ -111,10 +165,10 @@
                 </h2>
             </div>
             <div class="row">
-                <div class="col col-5 text-end">
+                <div class="col col-md-5 col-12 text-end tentang-logo">
                     <img src="assets/image/alfa-logo.svg" alt="" class="me-4 tentang-img" style="width: 20rem;">
                 </div>
-                <div class="col col-7">
+                <div class="col col-md-7 col-12">
                     <p class="text-white py-5 tentang-text">
                         M2 Network adalah sebuah perusahaan multi level marketing yang berfokus pada industri kecantikan
                         dan
@@ -189,32 +243,35 @@
                         <h1 class="crimson text-center card-title">
                             CONGRATULATIONS
                         </h1>
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="">
-                                <p class="fw-medium mb-0">
-                                    ATAS PENCAPAIAN
-                                </p>
-                                <p class="fw-bold fs-5 ">
-                                    REWARD ARFA POWER
-                                </p>
-                                <div class="btn-level d-inline-block text-center crimson py-2 px-4 rounded-3 fs-4">
-                                    <p class="m-0 px-2">
-                                        LEVEL 1
+                        <div class="d-flex justify-content-between align-items-center card-content-container">
+                            <div class="w-100">
+                                <div class="my-5 pb-md-5">
+                                    <p class="fw-medium mb-0">
+                                        ATAS PENCAPAIAN
+                                    </p>
+                                    <p class="fw-bold fs-5 ">
+                                        REWARD ARFA POWER
+                                    </p>
+                                    <div class="btn-level d-inline-block text-center crimson py-2 px-4 rounded-3 fs-4">
+                                        <p class="m-0 px-2">
+                                            LEVEL 1
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="">
+                                    <h3 class="fw-bold crimson fst-normal mb-0">
+                                        MRS.LILIK
+                                    </h3>
+                                    <p class="">
+                                        PATI - JAWA TENGAH
                                     </p>
                                 </div>
+
                             </div>
-                            <img src="assets/image/card-img.png" alt="" class="">
-                        </div>
-                        <div class="d-flex justify-content-between mt-3 mt-lg-5 pt-3">
-                            <div class="">
-                                <h3 class="fw-bold crimson fst-normal mb-0">
-                                    MRS.LILIK
-                                </h3>
-                                <p class="">
-                                    PATI - JAWA TENGAH
-                                </p>
-                            </div>
-                            <div class="">
+
+                            <div class="w-50 card-img-container">
+                                <img src="assets/image/card-img.png" alt="" class="mb-md-5 mb-4">
                                 <img src="assets/image/card-btn.png" alt="" class="">
                             </div>
                         </div>
@@ -334,22 +391,21 @@
         <div class="swiper-produk-tab mb-5 pb-5 d-none">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="assets/image/produk/produk1.png" alt="" class="">
+                    <img src="assets/image/produk/produk1.png" alt="" class="produk-img-mobile">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/image/produk/produk2.png" alt="" class="">
+                    <img src="assets/image/produk/produk2.png" alt="" class="produk-img-mobile">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/image/produk/produk3.png" alt="" class="">
+                    <img src="assets/image/produk/produk3.png" alt="" class="produk-img-mobile">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/image/produk/produk4.png" alt="" class="">
+                    <img src="assets/image/produk/produk4.png" alt="" class="produk-img-mobile">
                 </div>
                 <div class="swiper-slide">
-                    <img src="assets/image/produk/produk5.png" alt="" class="">
+                    <img src="assets/image/produk/produk5.png" alt="" class="produk-img-mobile">
                 </div>
             </div>
-            <!-- <div class="swiper-pagination"></div> --> -->
         </div>
         <!-- image slider tablet and mobile End-->
     </section>
@@ -598,11 +654,11 @@
                     </div>
                 </div>
                 <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination d-none"></div>
 
                 <!-- If we need navigation buttons -->
                 <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
+                    <div class="swiper-button-next"></div> -->
 
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
@@ -723,7 +779,6 @@
     </script>
     <script>
         var mySwiper = new Swiper('.swiper-produk-tab', {
-            slidesPerView: 3,
             spaceBetween: 0,
             initialSlide: 1,
             watchOverflow: true,
@@ -732,6 +787,18 @@
 
             autoplay: {
                 delay: 2000,
+            },
+
+            breakpoints: {
+                400: {
+                    slidesPerView: 1.25,
+                },
+                600: {
+                    slidesPerView: 3,
+                },
+                900: {
+                    slidesPerView: 3,
+                },
             },
 
             navigation: {
@@ -757,8 +824,12 @@
             },
 
             // Default parameters
-            slidesPerView: 3.5,
+            // slidesPerView: 3.5,
             spaceBetween: 0,
+
+            pagination: {
+                el: ".swiper-pagination",
+            },
 
             effect: 'creative',
             creativeEffect: {
@@ -777,9 +848,10 @@
 
             breakpoints: {
                 480: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 24,
-                    resistanceRatio: 0.85
+                    resistanceRatio: 0.85,
+
                 },
                 900: {
                     slidesPerView: 2,
@@ -790,6 +862,17 @@
                     slidesPerView: 3.5,
                 }
             },
+        });
+    </script>
+
+    <script>
+        var mobileNavItems = document.querySelectorAll('.nav-item-mobile');
+
+        mobileNavItems.forEach(function (item) {
+            item.addEventListener('click', function () {
+                var navbarNav = document.getElementById('navbarNav');
+                navbarNav.classList.remove('show');
+            });
         });
     </script>
 

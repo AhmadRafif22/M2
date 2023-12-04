@@ -8,7 +8,7 @@ body {
 
 @media screen and (max-width: 900px) {
     body {
-    background-size: contain;
+        background-size: contain;
     }
 }
 
@@ -59,10 +59,24 @@ section {
 }
 
 @media screen and (max-width: 900px) {
-    
+
     .section-title {
         font-size: 2rem;
         font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-title {
+        font-size: 1.45rem;
+    }
+    .section-sub {
+        font-size: 1.25rem;
+    }
+    section {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        width: 100% !important;
     }
 }
 
@@ -83,6 +97,62 @@ section {
     .nav-logo {
         margin: 0px !important;
         padding: 0px 20px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-logo {
+        display: none !important;
+    }
+
+    #navbar {
+        height: auto !important;
+    }
+
+    .nav-desktop {
+        display: none !important;
+    }
+
+    .nav-logo-mobile1 {
+        display: block !important;
+        top: 60%;
+        left: 50%;
+        transform: translate(-45%, -50%);
+    }
+    .nav-mobile {
+        right: 0 !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        top: 0 !important;
+        height: 100vh !important;
+        content: '' !important;
+        background-color: #080808 !important;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+        z-index: 999;
+        animation-duration: 2s;
+    }
+
+    .nav-mobile .close-btn {
+        right: 20px !important;
+    }
+
+    .nav-item-mobile {
+        border-top: 1px solid #B98E2A;
+        transition-duration: 200ms;
+    }
+
+    .nav-item-mobile:hover {
+        border-radius: 15px !important;
+        background-color: white !important;
+        background: rgb(175, 135, 40) !important;
+        background: linear-gradient(90deg, rgba(175, 135, 40, 1) 0%, rgba(183, 143, 40, 1) 20%, rgba(255, 215, 125, 1) 50%, rgba(176, 134, 43, 1) 80%, rgba(175, 135, 40, 1) 100%) !important;
+    }
+
+    .nav-item-mobile:hover p {
+        background: #080808;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 
@@ -124,8 +194,8 @@ section {
 
 @media screen and (min-width: 1441px) {
     .hero {
-        min-height: 830px !important;
-        margin-top: 50px !important;
+        min-height: 700px !important;
+        margin-top: 20px !important;
     }
 
     .hero .hero-img {
@@ -147,13 +217,64 @@ section {
     .hero .hero-title {
         font-size: 2.5rem;
         font-weight: 700;
-        line-height: 110%; /* 2.75rem */
+        line-height: 110%;
+        /* 2.75rem */
         letter-spacing: 0.05rem;
         width: 88%;
     }
 
     .hero .hero-content {
         transform: translateY(100px) !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        min-height: auto !important;
+        height: 750px;
+    }
+    .hero .hero-img {
+        top: -120px !important;
+        left: -60px !important;
+        height: 600px !important;
+        overflow: hidden !important;
+    }
+    .hero .hero-img img {
+        width: 90% !important;
+    }
+    .hero .hero-content {
+        transform: translateY(200px) !important;
+        z-index: 1 !important;
+    }
+    .hero .hero-text-up {
+        width: 100% !important;
+    }
+    .hero .hero-title {
+        font-size: 1.5rem !important;
+        width: 100% !important;
+    }
+    .hero .hero-sub {
+        font-size: 0.9rem !important;
+        line-height: 150%; /* 1.125rem */
+        letter-spacing: 0.0075rem;
+        width: 100% !important;
+    }
+    .hero .hero-btn {
+        padding: 20px 0px !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .hero .bg-img-hero {
+        display: block !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: 0 !important;
+        bottom: 0 !important;
+        content: '' !important;
+        background: linear-gradient(180deg, rgba(8,8,8,0) 40%, rgba(0,0,0,0.8) 100%);
+        z-index: 1 !important;
+
     }
 }
 
@@ -182,6 +303,23 @@ section {
     .tentang-kami .tentang-img {
         padding-top: 3rem;
         width: 280px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tentang-kami .section-title {
+        width: 90%;
+    }
+    .tentang-kami .tentang-logo {
+        text-align: center !important;
+    }
+    .tentang-kami .tentang-logo img {
+        margin: 0 !important;
+        padding-top: 10px !important;
+    }
+    .tentang-kami .tentang-text {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
     }
 }
 
@@ -215,6 +353,25 @@ section {
 
     }
 }
+
+@media screen and (max-width: 600px) {
+    .bergabung .section-title {
+        width: 90% !important;
+    }
+    .bergabung .card-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem !important;
+
+    }
+    .bergabung .card-content-container {
+        flex-direction: column-reverse !important;
+        text-align: center !important;
+    }
+    .bergabung .card-img-container {
+        width: 100% !important;
+    }
+}
+
 /* bergabung End*/
 
 /* jangan-ragu */
@@ -292,6 +449,12 @@ section {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .produk-img-mobile {
+        width: 100% !important;
+    }
+}
+
 /* produk End */
 
 /* dokumentasi */
@@ -338,7 +501,7 @@ section {
     .dokumentasi .section-title {
         width: 100%;
     }
-    
+
     .dokumentasi .dokumentasi-desc {
         width: 100%;
     }
@@ -350,6 +513,19 @@ section {
     .dokumentasi .dok-card {
         height: 350px !important;
         overflow: hidden !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .dokumentasi .dok-card {
+        height: 400px !important;
+        overflow: hidden !important;
+    }
+
+    .dokumentasi .dok-card-content a {
+        display: block !important;
+        text-align: center !important;
     }
 }
 
@@ -417,6 +593,39 @@ section {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .testimoni .section-title {
+        width: 80% !important;
+        text-align: left !important;
+        margin-left: 0 !important;
+    }
+    .testimoni .section-sub {
+        width: 75%;
+        text-align: left !important;
+        margin-left: 0 !important;
+    }
+
+    .testimoni .swiper-pagination {
+        display: block !important;
+    }
+
+    .testimoni .swiper-pagination-bullet {
+        background: transparent !important;
+        border: 4px solid #B98E2A !important;
+        padding: 2px !important;
+    }
+    .testimoni .swiper-pagination-bullet-active {
+        background: transparent !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        border-radius: 10px !important;
+        background-image: url('../image/navbar.png') !important;
+        background-repeat: no-repeat !important;
+        background-size: cover;
+        border: none !important;
+    }
+}
+
 /* Testimoni End */
 
 /* Hubungi */
@@ -454,6 +663,15 @@ section {
     background-image: url('../image/navbar.png') !important;
     background-repeat: no-repeat !important;
     background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .hubungi .section-title {
+        width: 90% !important;
+    }
+    .hubungi .dokumentasi-desc {
+        padding-right: 0px !important;
+    }
 }
 
 /* Hubungi End*/
